@@ -1,0 +1,1477 @@
+body{
+    background-image: url(../images/bodybg.jpg);
+    background-color: #f3e9c8;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: top;
+    background-attachment: initial;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    color: #666666;
+    font-family: Georgia, arial, sans-serif;
+}
+
+.wrapper{
+    max-width: 1025px;
+    margin: auto;
+}
+
+.title{
+    padding-top: 13px;
+    font-size: 30px;
+    text-align: center;
+    color: #2a310e;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.navigation{
+    list-style: none;
+    padding: 12px 0px 0px 55px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    display: inline;
+}
+
+li a {
+    color: #6e7641;
+    padding: 0px 10px 0px 4px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: #2a310e;  
+}
+
+ul li .active{
+    color: #2a310e;
+}
+
+/* dropsown menu */
+
+.dropbtn {
+    color: #6e7641;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+  .dropdown:hover .dropbtn {
+    color: #2a310e;  
+    cursor: pointer;
+}
+
+/* dropdown end */
+
+/* dropdown start more */
+
+.dropdown {
+    
+    color: #fff;
+    position: absolute;
+    z-index: 100;
+  }
+  .dropdown:hover {
+    cursor: pointer;
+  }
+  .dropdown:hover .dropdown_menu li {
+    display: block;
+    background: #727a45;
+    color: #d2c3a2;
+    width: 150px;
+    border-top: none;
+    border-bottom: 1px solid #d2c3a2;
+    border-right: none;
+    border-left: none;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 1;
+    padding: 12px 7px 12px 12px;
+  }
+  .dropdown_menu {
+    position: absolute;
+  }
+  .dropdown_menu li {
+    display: none;
+    color: #fff;
+    background-color: #34495e;
+    padding: 10px 20px;
+    font-size: 16px;
+    opacity: 0;
+  }
+
+  .dropdown_menu li a{
+    color: #fff;
+    font-size: 13px;
+  }
+  .dropdown_menu li :hover {
+    background: #727a45;
+    color: #d2c3a2;
+  }
+  .dropdown:hover .dropdown_menu--animated {
+    display: block;
+  }
+  .dropdown_menu--animated {
+    display: none;
+  }
+  .dropdown_menu--animated li {
+    display: block;
+    opacity: 1;
+  }
+
+  .dropdown_menu-4 .dropdown_item-1 {
+    transform-origin: top center;
+    animation: scaleZ 300ms 60ms ease-in-out forwards;
+  }
+  .dropdown_menu-4 .dropdown_item-2 {
+    transform-origin: top center;
+    animation: scaleZ 300ms 120ms ease-in-out forwards;
+  }
+  .dropdown_menu-4 .dropdown_item-3 {
+    transform-origin: top center;
+    animation: scaleZ 300ms 180ms ease-in-out forwards;
+  }
+  .dropdown_menu-4 .dropdown_item-4 {
+    transform-origin: top center;
+    animation: scaleZ 300ms 240ms ease-in-out forwards;
+  }
+  .dropdown_menu-4 .dropdown_item-5 {
+    transform-origin: top center;
+    animation: scaleZ 300ms 300ms ease-in-out forwards;
+  }
+  .dropdown_menu-4 .dropdown_item-6 {
+    transform-origin: top center;
+    animation: scaleZ 300ms 360ms ease-in-out forwards;
+  }
+  .dropdown_menu-4 .dropdown_item-7 {
+    transform-origin: top center;
+    animation: scaleZ 300ms 420ms ease-in-out forwards;
+  }
+  .dropdown_menu-4 .dropdown_item-8 {
+    transform-origin: top center;
+    animation: scaleZ 300ms 480ms ease-in-out forwards;
+  }
+  .dropdown_menu-4 .dropdown_item-9 {
+    transform-origin: top center;
+    animation: scaleZ 300ms 540ms ease-in-out forwards;
+  }
+  .dropdown_menu-4 .dropdown_item-10 {
+    transform-origin: top center;
+    animation: scaleZ 300ms 600ms ease-in-out forwards;
+  }
+  .dropdown_menu-4 .dropdown_item-11 {
+    transform-origin: top center;
+    animation: scaleZ 300ms 660ms ease-in-out forwards;
+  }
+
+  @-moz-keyframes scaleZ {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+    80% {
+      transform: scale(1.07);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  @-webkit-keyframes scaleZ {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+    80% {
+      transform: scale(1.07);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  @-o-keyframes scaleZ {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+    80% {
+      transform: scale(1.07);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  @keyframes scaleZ {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+    80% {
+      transform: scale(1.07);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+/* end dropdown more */
+
+.header{
+    position: relative;
+    z-index: 1;
+    padding: 21px;
+    margin: 31px 0px 0px 0px;
+    background: url("../images/headerbg.png");
+    background-size: 100% 100%;
+}
+
+.main-image {
+    width: 100%;
+    height: 100%;
+    
+}
+.main-image img{
+    width: 100%;
+    padding: 31px;
+}
+
+.heading{
+    font-size: xx-large;
+    color: rgb(51, 0, 0);
+    font-family: helvetica;
+    line-height: 22px;
+    padding-left: 30px;
+}
+
+.text1{
+    font-size: x-large;
+}
+
+.home-image1{
+    border-width: 1px;
+    padding: 3px;
+    border-style: solid;
+    border-color: #ccc #aaa #aaa #ccc;
+}
+
+.home-text1{
+    color: #333399;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: normal;
+}
+
+.home-text2{
+    font-size: large;
+    color: rgb(51, 102, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: normal;
+}
+
+.home-text3{
+    color: rgb(255, 204, 153);
+    font-size: x-small;
+    font-family: Tahoma;
+    line-height: 170%;
+}
+
+.home-text{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 97%;
+}
+
+.home-div{
+    max-width: 91%;
+}
+
+.home-text4{
+    color: #006600;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: normal;
+}
+
+.home-text5{
+    font-size: large;
+    color: rgb(0, 153, 0);
+    line-height: normal;
+}
+
+.home-text6{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: normal;
+    font-size: large;
+    color: #FF0000;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.section-text1{
+    color: #990000;
+    font-size: xx-large; 
+    font-family: 'Times New Roman', serif;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.section-image{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    border-width: 1px;
+    padding: 3px;
+    border-style: solid;
+    border-color: #ccc #aaa #aaa #ccc;
+    display: inline-block;
+    width: 100%;
+}
+
+.section-image img{
+    width: 100%;
+}
+
+.section-text2{
+    font-family: Arial, Helvetica, sans-serif; 
+    line-height: normal; 
+    color: #990000;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.section-detail1{
+    font-size: x-large; 
+    font-family: 'Times New Roman', serif;
+    line-height: normal;
+    color: #336666;
+}
+
+.section-detail2{
+    font-size: 16px; 
+}
+
+.section-detail3{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: normal;
+    font-size: x-large
+}
+
+.section-detail4{
+    font-family: Arial, Helvetica, sans-serif; 
+    line-height: normal;
+    font-size: large;
+}
+
+.section-text3{
+    font-size: 24px;
+    color: #660000;
+    font-weight: normal;
+    line-height: 1.5;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+.section-detail3{
+    font-size: x-large; 
+    font-family: 'helvetica';
+    line-height: normal;
+    color: #336666;
+}
+
+.section-detail4{
+    font-size: large; 
+    font-family: 'helvetica';
+    line-height: normal;
+    color: #336666;
+}
+
+.section-text4{
+    font-size: xx-large;
+    color: #663300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-detail5{
+    color: rgb(0, 0, 0);
+    font-family: arial;
+    line-height: normal;
+    font-size: large;
+}
+
+.section-detail6{
+    color: #009900;
+    font-size: small;
+    font-family: arial; 
+    line-height: normal; 
+}
+
+.section-detail6 li{
+    display: inline-block;
+}
+
+.section-four .text1{
+    font-size: xx-large;
+    color: #660000;
+    font-weight: bold;
+    padding-left: 30px;
+}
+
+.section-four .text2{
+    font-size: xx-large;
+    color: #660000;
+    font-family: Arial;
+}
+
+.section-four .text3{
+    font-size: xx-large;
+    color: #663300;
+    font-family: 'arial black', 'avant garde';
+    padding-left: 20px;
+}
+
+.section-four .details-one{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    line-height: 18px;
+    font-size: x-large; 
+    color: #336666;
+}
+
+.section-four .details-two{
+    font-size: medium;
+    color: #339999;
+    font-weight: bold;
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    line-height: 18px; 
+}
+
+.footer{
+    padding: 50px 14px 30px 14px;
+    margin: 0px 0px 0px 19px;
+}
+
+.footer img{
+    margin: auto;
+    max-width: 100%;
+}
+
+/* start rolling-gate-repair style */
+
+.rolling-text{
+    font-size: xx-large;
+    font-family: Georgia, arial, sans-serif;
+    color: #333333;
+}
+
+.rolling-text .text1{
+    font-family: Calibri, Arial, Helvetica, sans-serif;
+    line-height: 18px;
+    font-size: xx-large;   
+}
+
+.rolling-heading{
+    color: #990000;
+    font-family: Calibri, Arial, Helvetica, sans-serif;
+    line-height: 18px;
+    font-size: large;
+}
+
+.rolling-heading1{
+    color: #003300;
+    font-size: large;
+    font-family: Georgia, arial, sans-serif;
+    font-weight: bold;
+}
+
+.rolling-heading2{
+    color: #330033;
+    font-size: xx-large;
+    font-family: Calibri, Arial, Helvetica, sans-serif;
+    line-height: 18px;
+}
+
+.home-div .text1{
+    font-size: large;
+    font-family: Calibri, Arial, Helvetica, sans-serif;
+    line-height: 18px;
+    color: #330033;
+    font-weight: bold;   
+}
+
+/* end rolling-gate-repair style */
+
+/* start rolling-gate-installation style */
+
+.installation-text{
+    color: #CC9933;
+    font-size: xx-large;
+}
+
+.installation-text1{
+    color: #000099;
+    font-size: x-large;
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+    line-height: normal;
+}
+
+.installation-text2{
+    color: #000099;
+    font-size: medium;
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+    line-height: normal;
+}
+
+.installation-text3{
+    color: #003333;
+    font-size: x-large;
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+    line-height: normal;
+    font-weight: bold;
+}
+
+.installation-text4{
+    color: #003333;
+    font-size: medium;
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+    line-height: normal;
+}
+
+.installation-text5{
+    color: #333300;
+    font-size: xx-large;
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+    line-height: normal;
+}
+
+.installation-text6{
+    color: #333300;
+    font-size: large;
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+    line-height: normal;
+}
+
+.installation-text7{
+    color: #330099;
+    font-size: xx-large;
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+    line-height: normal;
+}
+
+.installation-text8{
+    color: #330099;
+    font-size: large;
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+    line-height: normal;
+}
+
+.installation-text9{
+    font-size: xx-large;
+    color: #CC0000;
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+    line-height: normal
+}
+
+.installation-section .text1{
+    font-size: medium;
+    color: #663333;
+}
+
+.installation-section .text2    {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    line-height: 17px;
+    font-size: 12px;
+}
+
+.installation-section .text3{
+    color: rgb(102, 51, 51);
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    line-height: 17px;
+    font-size: medium;
+}
+/*end rolling-gate-installation style */
+
+/* start rolling-Wrought-Iron  style */
+
+.wrought-iron{
+    font-family: 'Times New Roman', serif;
+    line-height: normal;
+    font-weight: bold;
+    font-size: xx-large;
+    color: #333300;
+}
+
+.wrought-iron-text1{
+    font-family: Tahoma;
+    line-height: normal;
+    font-weight: bold;
+    color: #333399;
+    font-size: x-large;
+}
+
+.wrought-iron-text2{
+    font-family: 'Times New Roman', serif;
+    line-height: normal;
+    font-weight: bold;
+    color: #333399;
+    font-size: large;
+}
+
+.wrought-iron-text3{
+    color: #666600;
+    line-height: normal;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.wrought-iron-text4{
+    color: #666600;
+    line-height: normal;
+    font-family: 'Times New Roman', serif;
+    line-height: normal;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+/* end rolling-Wrought-Iron  style */
+
+/* start rolling slide gate  style */
+.slide-gate1{
+    color: #000099;
+    font-size: xx-large;
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+    line-height: normal;
+}
+
+.slide-gate2{
+    color: #000099;
+    font-size: x-large;
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+    line-height: normal;
+}
+
+.slide-gate3{
+    color: #000099;
+    font-size: large;
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+    line-height: normal;
+}
+
+.slide-gate4{
+    color: #990000;
+    font-size: xx-large;
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+    line-height: normal;
+}
+
+.slide-gate5{
+    color: #990000;
+    font-size: large;
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+    line-height: normal;
+}
+
+/*end rolling slide gate  style */
+
+/* start rolling rolling gate  style */
+.heading .rolling-gate{
+    color: #CC0000;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+    font-family: Georgia, arial, sans-serif;
+}
+
+.home-div .rolling-gate1{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: normal;
+    color: #336666;
+    font-size: x-large;
+}
+
+.home-div .rolling-gate2{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: normal;
+    color: #336666;
+    font-size: large;
+}
+
+.home-div .rolling-gate3{
+    color: rgb(0, 0, 51); 
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: normal;
+    font-size: x-large;
+}
+
+.home-div .rolling-gate4{
+    color: rgb(0, 0, 51); 
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: normal;
+    font-size: large;
+}
+
+.rolling-seciton .heading{
+    font-family: tahoma;
+    line-height: 12px;
+    color: #660000;
+    font-size: xx-large;
+}
+
+.rolling-text1{
+    font-family: tahoma;
+    line-height: 12px;
+    font-size: x-large;
+    color: #003300;
+}
+
+.rolling-text2{
+    font-family: tahoma;
+    line-height: 1.1;
+    font-size: large;
+    color: #003300;
+}
+
+.rolling-text3{
+    font-family: tahoma;
+    line-height: 1.1;
+    font-size: x-large;
+    color: #330000;
+}
+
+.rolling-text4{
+    font-family: tahoma;
+    line-height: 1.1;
+    font-size: large;
+    color: #330000;
+}
+
+.rolling-text5{
+    font-family: tahoma;
+    line-height: 1.1;
+    font-size: large;
+    color: #323232;
+}
+
+.rolling-text6{
+    font-family: tahoma;
+    line-height: 1.3;
+    font-size: medium;
+    color: #323232;
+}
+
+.rolling-text7{
+    color: #FF0000;
+    font-size: x-large;
+    font-family: tahoma;
+    line-height: 1.1;
+}
+
+.rolling-text8{
+    color: #FF0000;
+    font-size: medium;
+    font-family: tahoma;
+    line-height: 1.1;
+}
+
+
+.rolling-text10{
+    color: #33CC00;
+    font-size: large;
+    font-family: tahoma;
+    line-height: 1.2;
+
+}
+
+.rolling-ul li{
+    display: list-item;
+    list-style-position: outside;
+    color: #000000;
+    font-size: x-large;
+    font-family: tahoma;
+    line-height: 19px;
+    padding-left: 5px;
+}
+
+.rolling-bullet ul{
+    overflow: visible;
+    list-style-type: disc;
+}
+
+.rolling-text9{
+    color: rgb(50, 50, 50);
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.rolling-section2{
+    font-size: xx-large;
+    color:#006600;
+    font-family: Tahoma;
+    line-height: 22px;
+}
+
+.home-div .rolling-section2{
+    color: #993300;
+    font-size: medium;
+    font-family: Tahoma; 
+    line-height: 22px; 
+}
+
+.rolling-section3{
+    font-family: Tahoma;
+    color: #403b34;
+    font-size: 14px;
+}
+
+.rolling-seciton5 .heading{
+    font-family: Tahoma;
+    line-height: 22px;
+    color: #000099;
+    font-size: x-large;
+}
+
+.rolling-seciton6{
+    color: #FF6600;
+    font-size: medium;
+    font-weight: bold;
+}
+
+/* end rolling rolling gate  style */
+
+/* start rolling swing gate  style */
+
+.rolling-swing{
+    color: #000066;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: normal;
+    font-size: xx-large;
+}
+
+.home-div .swing-text1{
+    color:#006600;
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: normal;
+}
+
+.home-div .swing-text2{
+    color:#006600;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: normal;
+}
+
+.home-div .swing-text3{
+    color:#990000;
+    font-size: x-large;
+    font-family: Tahoma;
+    line-height: 22px;
+}
+
+.home-div .swing-text4{
+    color:#990000;
+    font-size: large;
+    font-family: Tahoma;
+    line-height: 22px;
+}
+
+/* end rolling swing gate  style */
+
+/* start rolling direway gate  style */
+.rolling-direway {
+    color: #660000;
+    font-size: xxx-large;
+}
+
+.rolling-direway .heading2{
+    font-family: Tahoma;
+    line-height: 22px;
+}
+
+/* end rolling direway gate  style */
+
+/* start rolling wood gate  style */
+
+.rolling-wood{
+    color:#3333FF;
+    font-size: xxx-large;
+    line-height: 22px;
+}
+
+.home-div .wood-text1{
+    color:#663366;
+    font-size: x-large;
+    font-family: Tahoma;
+    line-height: 1.0;
+}
+
+.home-div .wood-text2{
+    font-family: Tahoma;
+    line-height: 1.3;
+    color: #403b34;
+    font-size: large;
+}
+
+/* end rolling wood gate  style */
+
+.rolling-railings{
+    margin-bottom: 200px;
+}
+
+/* start rolling steel gate  style */
+
+.rolling-steel strong{
+    color: #FF6600;
+    font-size: xx-large;
+}
+
+.home-div .steel-text1{
+    font-size: x-large;
+    color: #CC0000;
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+    line-height: normal
+}
+
+.home-div .steel-text2{
+    color: #660000;
+    font-family: Tahoma;
+    line-height: normal;
+    font-size: large;
+}
+
+.home-div .steel-text3{
+    color: #000066;
+    font-family: Tahoma;
+    line-height: normal;
+    font-size: x-large;
+}
+
+.rolling-bullet .rolling-ul li{
+    font-size: x-large;
+    color: rgb(0, 51, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: normal;
+}
+
+/* start rolling steel gate  style */
+
+/* start rolling Arm gate  style */
+
+.rolling-arm{
+    font-size: xxx-large;
+    color: #003300;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+.home-div .arm-text1{
+    color: #009900;
+    font-family: verdana;
+    line-height: 16px;
+    font-size: medium;
+}
+
+.home-div .arm-text2{
+    color: #009900;
+    font-family: verdana;
+    line-height: 16px;
+    font-size: small;
+}
+
+.section-two .arm-text3{
+    color: rgb(204, 0, 0);
+    font-size: xxx-large;
+}
+
+.arm-text4{
+    color: #663300;
+    font-size: large;
+    font-family: Arial;
+    line-height: normal;
+    font-weight: bold;
+}
+
+.home-div .arm-text5{
+    color: #000099;
+    font-family: verdana;
+    line-height: 16px;
+    font-size: xx-large;
+}
+
+.home-div .arm-text6{
+    color: #000099;
+    font-family: verdana;
+    line-height: 16px;
+    font-size: large;
+}
+
+.home-div .arm-text7{
+    color: #000099;
+    font-family: verdana;
+    line-height: 16px;
+    font-size: x-large;
+}
+
+.home-div .arm-text8{
+    color: #000099;
+    font-family: verdana;
+    line-height: 16px;
+    font-size: large;
+}
+
+.home-div .arm-text9{
+    color: #FF0000;
+    font-family: verdana;
+    line-height: 16px;
+    font-size: x-large;
+}
+
+.home-div .arm-text10{
+    color: #FF0000;
+    font-family: verdana;
+    line-height: 16px;
+    font-size: large;
+}
+
+/* start rolling Arm gate  style */
+
+/* start rolling windows gate  style */
+
+.rolling-windows .text1{
+    color: #CC0000;
+    font-size: xxx-large;
+}
+
+.rolling-windows .text2{
+    color: #CC0000;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    font-size: xxx-large;
+}
+
+.home-div .windows-text1{
+    color: rgb(44, 62, 73);
+    font-family: arial, helvetica, sans-serif, verdana;
+    line-height: normal;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.home-div .windows-text2{
+    color: rgb(44, 62, 73);
+    font-family: arial, helvetica, sans-serif, verdana;
+    line-height: normal;
+    font-size: large;
+}
+
+.home-div .windows-text3{
+    color: #006600;
+    font-family: arial, helvetica, sans-serif, verdana;
+    line-height: normal;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.home-div .windows-text4{
+    color: #006600;
+    font-family: arial, helvetica, sans-serif, verdana;
+    line-height: normal;
+    font-size: large;
+}
+
+.home-div .windows-text5{
+    color: #000066;
+    font-family: arial, helvetica, sans-serif, verdana;
+    line-height: normal;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.home-div .windows-text6{
+    color: #000066;
+    font-family: arial, helvetica, sans-serif, verdana;
+    line-height: normal;
+    font-size: large;
+}
+
+.home-div .windows-text7{
+    color: #000099;
+    font-family: arial, helvetica, sans-serif, verdana;
+    line-height: normal;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.home-div .windows-text8{
+    color: #993300;
+    font-family: Tahoma;
+    line-height: normal;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.home-div .windows-text9{
+    color: #993300;
+    font-family: Tahoma;
+    line-height: normal;
+    font-size: medium;
+}
+
+.home-div .windows-text10{
+    color: #000066;
+    font-family: Tahoma;
+    line-height: normal;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.home-div .windows-text11{
+    color: #000066;
+    font-family: Tahoma;
+    line-height: normal;
+    font-size: medium;
+}
+
+/* end rolling windows gate  style */
+
+/* start rolling fencing gate  style */
+
+.rolling-fencing span{
+    font-size: xx-large;
+    color: rgb(255, 0, 0);
+    font-family: Arial, Verdana, Helvetica, Geneva, Swiss, SunSans-Regular;
+    line-height: 1.1;
+}
+
+.home-div .fencing-text1{
+    color: rgb(0, 0, 0);
+    font-family: Arial, Verdana, Helvetica, Geneva, Swiss, SunSans-Regular;
+    line-height: 16px;
+    font-size: xx-large;
+}
+
+.home-div .fencing-text2{
+    color: rgb(0, 0, 0);
+    font-family: Arial, Verdana, Helvetica, Geneva, Swiss, SunSans-Regular;
+    line-height: 16px;
+    font-size: x-large;
+}
+
+.home-div .fencing-text3{
+    color: #00CCCC;
+    font-family: Arial, Verdana, Helvetica, Geneva, Swiss, SunSans-Regular;
+    line-height: 16px;
+    font-size: x-large;
+}
+
+.home-div .fencing-text4{
+    color: #CC0000;
+    font-family: Arial, Verdana, Helvetica, Geneva, Swiss, SunSans-Regular;
+    line-height: 16px;
+    font-size: xx-large;
+}
+
+.home-div .fencing-text5{
+    color: #CC0000;
+    font-family: Arial, Verdana, Helvetica, Geneva, Swiss, SunSans-Regular;
+    line-height: 16px;
+    font-size: large;
+}
+
+.home-div .rolling-bullet .rolling-ul li{
+    color: #003333;
+    font-size: large;
+    font-weight: bold;
+}
+
+.home-div .fencing-text6{
+    color: #33CC00;
+    font-family: Arial, Verdana, Helvetica, Geneva, Swiss, SunSans-Regular;
+    line-height: 16px;
+    font-size: x-large;
+}
+
+.home-div .fencing-text7{
+    color: #33CC00;
+    font-family: Arial, Verdana, Helvetica, Geneva, Swiss, SunSans-Regular;
+    line-height: 16px;
+    font-size: large;
+}
+
+.fencing-bullet .rolling-bullet .rolling-ul li{
+    font-size: large;
+    color: rgb(0, 0, 0);
+}
+
+.home-div .fencing-text8{
+    color: rgb(51, 102, 255); 
+    font-family: Arial, Verdana, Helvetica, Geneva, Swiss, SunSans-Regular;
+    line-height: 16px;
+    font-size: xx-large;
+}
+
+.home-div .fencing-text9{
+    color: rgb(51, 102, 255); 
+    font-family: Arial, Verdana, Helvetica, Geneva, Swiss, SunSans-Regular;
+    line-height: 16px;
+    font-size: large;
+}
+
+.home-div .fencing-text10{
+    color: rgb(255, 0, 0);
+    font-size: x-large; 
+    font-family: Arial, Verdana, Helvetica, Geneva, Swiss, SunSans-Regular;
+    line-height: 16px;
+}
+
+.home-div .fencing-text11{
+    font-size: large;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Verdana, Helvetica, Geneva, Swiss, SunSans-Regular;
+    line-height: 16px;
+}
+
+.heading a .rolling-garage1{
+    color: #330000;
+    font-size: xxx-large;
+    font-weight: bold;
+    font-family: Georgia, arial, sans-serif;
+}
+
+.heading a .rolling-garage2{
+    color: #CC0000;
+    font-size: xxx-large;
+    font-weight: bold;
+    font-family: Georgia, arial, sans-serif;
+}
+@media (min-device-width:768px) and (max-device-width:884px) {
+
+    li a{
+        font-size: 12px;
+    }
+
+    .image-col{
+        padding-right: 0px;
+    }
+
+    .text-col{
+        padding-left: 4px !important;
+    }
+
+    .section-text4,
+    .section-text2,
+    .section-text1{
+        font-size: 22px;
+    }
+    .section-four .text3,
+    .section-four .text1,
+    .section-four .text2{
+        font-size: 24px;
+    }
+
+    .section-text3{
+        font-size: 20px;
+    }
+
+    .navigation{
+        padding-left: 50px;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    /* start dropdown list */
+
+    .dropdown_menu-4 .dropdown_item-1 {
+        transform-origin: top center;
+        animation: scaleZ 300ms 60ms ease-in-out forwards;
+      }
+      .dropdown_menu-4 .dropdown_item-2 {
+        transform-origin: top center;
+        animation: scaleZ 300ms 120ms ease-in-out forwards;
+      }
+      .dropdown_menu-4 .dropdown_item-3 {
+        transform-origin: top center;
+        animation: scaleZ 300ms 180ms ease-in-out forwards;
+      }
+      .dropdown_menu-4 .dropdown_item-4 {
+        transform-origin: top center;
+        animation: scaleZ 300ms 240ms ease-in-out forwards;
+      }
+      .dropdown_menu-4 .dropdown_item-5 {
+        transform-origin: top center;
+        animation: scaleZ 300ms 300ms ease-in-out forwards;
+      }
+      .dropdown_menu-4 .dropdown_item-6 {
+        transform-origin: top center;
+        animation: scaleZ 300ms 360ms ease-in-out forwards;
+      }
+      .dropdown_menu-4 .dropdown_item-7 {
+        transform-origin: top center;
+        animation: scaleZ 300ms 420ms ease-in-out forwards;
+      }
+      .dropdown_menu-4 .dropdown_item-8 {
+        transform-origin: top center;
+        animation: scaleZ 300ms 480ms ease-in-out forwards;
+      }
+      .dropdown_menu-4 .dropdown_item-9 {
+        transform-origin: top center;
+        animation: scaleZ 300ms 540ms ease-in-out forwards;
+      }
+      .dropdown_menu-4 .dropdown_item-10 {
+        transform-origin: top center;
+        animation: scaleZ 300ms 600ms ease-in-out forwards;
+      }
+      .dropdown_menu-4 .dropdown_item-11 {
+        transform-origin: top center;
+        animation: scaleZ 300ms 660ms ease-in-out forwards;
+      }
+
+      .dropdown_menu-4 .dropdown_item-12 {
+        transform-origin: top center;
+        animation: scaleZ 300ms 720ms ease-in-out forwards;
+      }
+      .dropdown_menu-4 .dropdown_item-13 {
+        transform-origin: top center;
+        animation: scaleZ 300ms 780ms ease-in-out forwards;
+      }
+      .dropdown_menu-4 .dropdown_item-14 {
+        transform-origin: top center;
+        animation: scaleZ 300ms 840ms ease-in-out forwards;
+      }
+
+/* end dropdown list */
+
+    .title {
+        font-size: 13px;
+        line-height: 0.1;
+        margin-top: 13px;
+    }
+
+    .titletext img{
+        width: 18px;
+    }
+
+    .navigation{
+        padding-top: 18px;
+    }
+
+    .heading{
+        font-size: x-large;
+        line-height: 1.5;
+        padding-left: 7px;
+        text-align: center;
+    }
+
+    .text1{
+        font-size: 22px;
+    }
+
+    .home-div {
+        max-width: 100%;
+        padding-left: 12px;
+    }
+
+    .section-text4,
+    .section-text2,
+    .section-text1{
+        font-size: large;
+    }
+
+    .section-image{
+        width: 100%;
+    }
+    
+    .section-image img{
+        width: 100%;
+    }
+
+    .section-four .details-one,
+    .section-four .text1,
+    .section-four .text2,
+    .section-four .text3,
+    .section-detail3,
+    .section-detail1{
+        font-size: xx-small;
+    }
+
+    .section-detail5,
+    .home-text3,
+    .section-detail4,
+    .section-detail2{
+        font-size: 7px;
+}
+    .section-text3{
+        font-size: 8px;
+    }
+
+    .section-detail6{
+        font-size: 5px;
+        line-height: 0.1;
+    }
+
+    .section-four .details-two{
+        line-height: normal;
+        font-size: 7px;
+    }
+
+    .dropdown_menu {
+        margin-left: -60px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .main-image img{
+        padding: 8px;
+    }
+}
